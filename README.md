@@ -1,8 +1,67 @@
-# wowzer - DIY World of Warcraft Fishing Bot
-## Python & OpenCV Tutorial Project
+# wowzer - World of Warcraft Automation Bot
+## Python & OpenCV Tutorial Project for Fishing and Grinding
 
-[![Tutorial Youtube Video Link](https://img.youtube.com/vi/TCzMkWkpMS4/0.jpg)](https://www.youtube.com/watch?v=TCzMkWkpMS4)
+This project is an educational tutorial on AI and computer vision using Python and OpenCV. It demonstrates basic Python and OpenCV techniques for game automation. The bot now includes:
 
+1. **Fishing Bot**: Automatically casts fishing and catches fish in different zones.
+2. **Grinding Bot**: Automatically finds enemies, fights them, and loots them.
 
-This project is part of an educational tutorial on AI and computer vision using Python and OpenCV.  This project will introduce basic Python and OpenCV techniques for automation.  In this tutorial, we will be creating a fully functional AI capable of performing fishing in World of Warcraft.  The video series can be found on Youtube at https://www.youtube.com/watch?v=TCzMkWkpMS4.
+## Features
 
+### Core Features
+- Screen capture and analysis using OpenCV
+- Template matching for object detection
+- Keyboard and mouse automation via PyAutoGUI
+- Multithreaded operation for responsive performance
+
+### Fishing Bot
+- Detects fishing bobber using template matching
+- Watches for bite detection using color changes
+- Automatically reels in and recasts
+
+### Grinding Bot (New!)
+- Enemy detection and targeting
+- Class-specific combat rotations
+- Pathfinding and navigation
+- Loot collection
+- Resource management (health/mana)
+- Stuck detection and recovery
+
+## Installation
+
+1. Clone this repository
+2. Install dependencies:
+```
+pip install opencv-python pyautogui numpy pillow
+```
+
+## Usage
+
+Run the bot with:
+```
+python src/wowzer.py
+```
+
+### Commands
+- `S` - Start screen capture
+- `Z` - Set zone
+- `F` - Start fishing
+- `G` - Start grinding (NEW!)
+- `C` - Set character class (NEW!)
+- `Q` - Quit wowzer
+
+## Customization
+
+### Adding New Combat Classes
+Edit the `combat.py` file to add new class rotations.
+
+### Setting Up Grinding Areas
+Configure grinding areas by adding waypoints in `navigation.py`.
+
+## Educational Use Only
+
+This project is intended for educational purposes to demonstrate computer vision and automation techniques. Using bots in online games may violate the terms of service and could result in your account being banned.
+
+## License
+
+This project is licensed under GNU GPL v3.
